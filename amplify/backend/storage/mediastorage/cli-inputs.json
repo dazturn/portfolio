@@ -1,0 +1,14 @@
+{
+  "resourceName": "mediastorage",
+  "policyUUID": "d764f104",
+  "bucketName": "portfolio001",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
