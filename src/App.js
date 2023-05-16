@@ -97,7 +97,13 @@ const App = ({ signOut }) => {
             type="file"
             style={{ alignSelf: "end" }}
           />
-          {notes.map((note) => (
+          <Button type="submit" variation="primary">
+            Create Note
+          </Button>
+        </Flex>
+      </View>
+      <Heading level={2}>Current Notes</Heading>
+      {notes.map((note) => (
             <Flex
               key={note.id || note.name}
               direction="row"
@@ -120,12 +126,6 @@ const App = ({ signOut }) => {
               </Button>
             </Flex>
           ))}
-          <Button type="submit" variation="primary">
-            Create Note
-          </Button>
-        </Flex>
-      </View>
-      <Heading level={2}>Current Notes</Heading>
       <View margin="3rem 0">
       </View>
       <Button onClick={signOut}>Sign Out</Button>
